@@ -23,6 +23,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <ClerkProvider
+                signInUrl='/sign-in'
+                signUpUrl='/sign-up'
                 appearance={{
                     layout: {
                         socialButtonsVariant: "iconButton",

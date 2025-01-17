@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from 'next/image';
 import Link from "next/link";
 
 const features = [
@@ -46,10 +47,11 @@ const Join: React.FC = () => {
 
                 <div className="flex-1 flex justify-center items-center">
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden flex justify-center items-center mt-6">
-                        <img
+                        <Image
                             src="/images/screen.png"
                             alt="Personalized Virtual Spaces"
                             className="w-[90%]"
+                            width={600} height={100}
                         />
                     </div>
                 </div>

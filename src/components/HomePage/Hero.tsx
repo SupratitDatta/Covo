@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from 'next/image';
 import { useUser } from "@clerk/nextjs";
 import { useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useRouter } from "next/navigation";
@@ -57,15 +58,17 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="relative w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                <img
+                <Image
                     src="/images/hero.png"
                     alt="Video Call"
                     className="w-4/5 md:w-full rounded-lg object-cover"
+                    width={400} height={200}
                 />
-                <img
+                <Image
                     src="/images/hero2.jpeg"
                     alt="Video Call"
                     className="absolute w-1/2 top-64 rounded-md h-36 object-cover border-2 border-white opacity-0 md:opacity-1 lg:opacity-1 "
+                    width={400} height={200}
                 />
             </div>
         </div>

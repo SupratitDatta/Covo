@@ -50,10 +50,10 @@ const MeetingSetup = ({
 
     return (
         <div className="flex h-screen w-full flex-col items-center justify-center gap-6 px-4 sm:px-6 md:px-8 lg:px-12 bg-dark-4 text-white">
-            <h1 className="text-center text-xl font-bold sm:text-2xl lg:text-3xl">
+            <h1 className="text-center text-2xl font-bold sm:text-4xl lg:text-3xl">
                 Setup
             </h1>
-            <VideoPreview className="w-full aspect-video rounded-md border border-gray-700" />
+            <VideoPreview className=" w-full md:w-[50%] lg:w-[50%] aspect-video rounded-md border border-gray-700" />
             <div className="flex h-16 items-center justify-center gap-3">
                 <label className="flex items-center justify-center gap-2 font-medium">
                     <input
@@ -66,7 +66,7 @@ const MeetingSetup = ({
                 <DeviceSettings />
             </div>
             <Button
-                className="rounded-md bg-green-500 px-4 py-2.5"
+                className="rounded-md bg-green-500 px-4 py-2.5 mb-4"
                 onClick={() => {
                     call.join();
 

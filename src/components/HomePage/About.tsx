@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import MeetingTypeList from '../MeetingTypeList';
 
@@ -7,10 +8,11 @@ const About: React.FC = () => {
     return (
         <section id="about" className="pt-[4vh] md:pt-[20vh] lg:pt-[20vh] min-h-[100vh] flex flex-col-reverse md:flex-row items-center justify-center bg-gray-50 md:py-16 lg:py-16 px-6">
             <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0 animate-slide-in-left">
-                <img
+                <Image
                     src="/images/hero3.jpg"
                     alt="Video Conferencing Illustration"
                     className="rounded-lg w-[80%] shadow-lg shadow-blue-300 mt-4 md:mt-0 lg:mt-0"
+                    width={400} height={200}
                 />
             </div>
 

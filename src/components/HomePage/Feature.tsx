@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const featuresData = [
     {
@@ -41,10 +42,11 @@ const Feature: React.FC = () => {
                             key={index}
                             className="bg-white text-black p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-300 flex flex-col items-center text-center"
                         >
-                            <img
+                            <Image
                                 src={feature.image}
                                 alt={feature.title}
                                 className="w-full h-40 object-cover rounded-t-lg mb-4"
+                                width={400} height={200}
                             />
                             <h2 className="text-xl font-bold">{feature.title}</h2>
                             <p className="text-sm text-gray-500 mt-2">{feature.subheading}</p>

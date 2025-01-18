@@ -23,7 +23,7 @@ const Alert = ({ title, iconUrl }: PermissionCardProps) => {
                             <p className="text-center text-xl font-semibold">{title}</p>
                         </div>
 
-                        <Button asChild className="bg-blue-1">
+                        <Button asChild className="bg-white text-black text-xl">
                             <Link href="/">Back to Home</Link>
                         </Button>
                     </div>

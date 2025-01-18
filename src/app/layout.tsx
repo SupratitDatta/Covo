@@ -23,8 +23,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <ClerkProvider
-                signInFallbackRedirectUrl="/sign-in"
-                signUpFallbackRedirectUrl="/sign-up"
                 appearance={{
                     layout: {
                         socialButtonsVariant: "iconButton",
